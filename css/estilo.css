@@ -1,7 +1,12 @@
+/*paleta de cores
 
+.color1 { #00ccbe };
+.color2 { #09a6a3 };
+.color3 { #9dbfaf };
+.color4 { #edebc9 };
+.color5 { #fcf9d8 };*/
 
-/*incluindo googlefonts*/
-
+/*incluindo google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
@@ -10,66 +15,72 @@
     box-sizing: border-box;
 }
 a{
-    text-decoration: none; /*remover o sublinhado do texto*/
-    color: white;
+    text-decoration: none;
+    /*color: adicona a cor as palavras do menu*/
 }
-#cabecalho{
-    background-color: #020001;
-    top: 0;
-    width: 100%;
-    height: 150px;
-    align-items: end;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    z-index: 1000;
 
-#logo img{
-    max-width: 20vh;
-    height: auto;
-    border-radius: 50%;
-    border: 5px solid white;
+#cabecalho{
+    background-color: #00ccbe;
+    top: 0;                          /*mantem o menu no topo da pagina*/
+    width: 100%;                     /*largura do menu*/
+    height: 250px;                   /*altura do menu*/
+    align-items: end;                /*alinha os itens do menu na parte inferior*/
+    display: flex;                  /*transforma o menu em flexivel*/
+    justify-content: space-between; /*espaco entre os itens do menu*/
+    position: fixed;                /*mantem o menu fixo no topo da pagina*/
+    z-index: 1000;                  /*mantem o menu na frente dos outros elementos*/
+    padding: 30px;                   /*espaço entre o menu e a borda inferior*/
 }
-#menu{
-    width: 80%;
-    background-color: #340016;
-    height: 40px;
-}/* não será usado por hora*/
+
+#imgPerfil img{
+    max-width: 10vh;                /* Defina a largura desejada */
+    height: auto;                   /* Mantém a proporção */
+    border-radius: 50%;            /* Opcional: deixa a imagem redonda */
+    border: 5px solid white;    /* Borda branca ao redor da imagem */
+}
 
 #menu ul{
-    list-style: none;/*retirar marcador*/
-    display: flex;/*deixa os elementos em linha*/
-    align-items: center;
-    justify-content: center;
-    gap: 30px; /*espaço entre os elementos*/
-    font-size: 1,2em;
-    padding-left: 100px;/*joga para a esquerda*/
-    padding-bottom: 10px;
+    list-style: none;               /*remove os marcadores da lista*/
+    display: flex;                  /*transforma a lista em flexivel*/
+    justify-content: right;      /*centraliza os itens do menu*/
+    gap: 30px;                      /*espaço entre os itens do menu*/
+    font-size: 1,2em;             /*tamanho da fonte do menu*/
+    padding-right: 30px;       /*espaço entre o menu e a borda direita*/
+    padding-bottom: 10px;      /*espaço entre o menu e a borda inferior*/
 }
 
 #menu a:hover {
-    color: white;  
+    color: white;
+    text-decoration: none; 
 }
-#home, #sobreMim, #portifolio, #contato {
-    padding-top: 150px;
-    scroll-margin-top: 150px;
 
+#home, #sobreMim, #portifolio, #contato{
+    scroll-margin-top: 150px;  /* Ajuste o valor conforme a altura do seu cabeçalho */
+    min-height: 100vh;       /* Garante que cada seção ocupe pelo menos a altura total da janela */
+    padding: 40px;          /* Espaçamento interno para evitar que o conteúdo fique colado nas bordas */
 }
+
 #home{
-    background-image: url(../imagens/frio.jpg);
-    height: 100vh;
+    background-image: url('../img/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: justify;
+    padding: 40px;
+    min-height: 100vh;
 }
 
 #home p{
+    font-family: "Roboto", sans-serif;
     width: 80%;
-    padding: 15px;
+    max-width: 1200px;
+    padding: 30px;
     border-radius: 7px;
     text-align: justify;
-    background-color: #FE6C2B;
-    color: #fff
-    opacity: 95%
-
+    background-color: #fcf9d8;
+    color: black;
+    opacity: 75%;
 }
