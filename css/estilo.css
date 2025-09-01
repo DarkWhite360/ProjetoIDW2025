@@ -49,7 +49,7 @@ a{
     padding-bottom: 10px;      /*espaço entre o menu e a borda inferior*/
 }
 
-#menu a:hover {
+#menu a {
     color: white;
     text-decoration: none; 
 }
@@ -61,7 +61,7 @@ a{
 }
 
 #home{
-    background-image: url('../img/fundo.jpg');
+    background-image: url('../img/fundo2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -84,3 +84,78 @@ a{
     color: black;
     opacity: 75%;
 }
+
+#sobreMim{
+    background-color: #edebc9;
+    color: #333;
+    padding-top: 60px;
+}
+
+#sobreMim h1{
+    margin-bottom: 30 px;
+}
+
+#sobreMim .personalizado{
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+#sobreMim .curriculo{
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 0.9em;
+}
+
+#sobreMim .descricao{
+    margin-top:30px;
+    margin-right: 100px;
+}
+
+#sobreMim #sobreMimContainer{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    margin-right: 100px;
+    margin-bottom: 50px;    
+}
+#sobreMim #sobreMimContainer img{
+    width: 35vh;
+    border-radius: 50%;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.35);
+}
+#sobreMim #sobreMimContainer p{
+    text-align: justify;
+}
+#sobreMim .habilidade {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 10px;
+}
+#sobreMim .habildiades .article{
+    box-shadow: 0 px 25 px rgba(0, 0, 0, 0.35);
+    flex: 1 1 200px;
+    max-width: 22%;
+    text-align: center;
+    border-radius: 10px 0px 10 px 0;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+#sobreMim .habildiade article:hover{
+    transform: scale(1.03);
+    border-color: orange;
+}
+#sobreMim .habilidade img{
+    width: 20vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#sobreMim .habilidade h3{
+    font-size: 1.0em;
+    margin-top: 10px;
+    text-align: center;
+}
+
