@@ -20,7 +20,7 @@ a{
 }
 
 #cabecalho{
-    background-color: #00ccbe;
+    background-color: #fcf9d8;
     top: 0;                          /*mantem o menu no topo da pagina*/
     width: 100%;                     /*largura do menu*/
     height: 250px;                   /*altura do menu*/
@@ -33,25 +33,39 @@ a{
 }
 
 #imgPerfil img{
-    max-width: 10vh;                /* Defina a largura desejada */
+    max-width: 16vh;                /* Defina a largura desejada */
     height: auto;                   /* Mantém a proporção */
     border-radius: 50%;            /* Opcional: deixa a imagem redonda */
     border: 5px solid white;    /* Borda branca ao redor da imagem */
 }
+
+#imgPerfil figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza imagem e figcaption */
+}
+#imgPerfil figcaption{
+    text-align: center;
+    width: 100%;
+}
+
 
 #menu ul{
     list-style: none;               /*remove os marcadores da lista*/
     display: flex;                  /*transforma a lista em flexivel*/
     justify-content: right;      /*centraliza os itens do menu*/
     gap: 30px;                      /*espaço entre os itens do menu*/
-    font-size: 1,2em;             /*tamanho da fonte do menu*/
+    font-size: 2em;             /*tamanho da fonte do menu*/
     padding-right: 30px;       /*espaço entre o menu e a borda direita*/
     padding-bottom: 10px;      /*espaço entre o menu e a borda inferior*/
 }
 
 #menu a {
-    color: white;
+    color: black;
     text-decoration: none; 
+}
+#menu a:hover {
+    color: rgb(92, 31, 42); 
 }
 
 /*====================================================================*/
@@ -63,7 +77,7 @@ a{
 }
 
 #home{
-    background-image: url('../img/fundo2.jpg');
+    background-image: url('../img/lamp.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -71,15 +85,16 @@ a{
     align-items: center;
     justify-content: center;
     text-align: justify;
-    padding: 40px;
-    min-height: 100vh;
+    padding: 100px;
+    min-height: 120vh;
 }
 
 #home p{
     font-family: "Roboto", sans-serif;
-    width: 80%;
-    max-width: 1200px;
-    padding: 30px;
+    font-size: 2.5em; 
+    width: 95%;
+    max-width: 1400px;
+    padding: 40px;
     border-radius: 7px;
     text-align: justify;
     background-color: #fcf9d8;
@@ -129,8 +144,13 @@ a{
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.35);
 }
 
+#sobreMim #sobreMimContainer figcaption{
+    text-align: center;
+}
+
 #sobreMim #sobreMimContainer p{
     text-align: justify;
+    font-size: 2em;
 }
 
 #sobreMim .habilidade {
@@ -182,6 +202,11 @@ a{
     margin-bottom: 30px;
 }
 
+#portifolio p{
+    text-align:left;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
 #portifolios{
     display:flex;
     flex-wrap: wrap;
@@ -209,7 +234,7 @@ a{
 }
 
 #portifolios article p{
-    text-align: justify;
+    text-align: justify; 
     margin-bottom: 5px;
 }
 
